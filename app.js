@@ -26,6 +26,14 @@ async function searchFood() {
             resultsContainer.appendChild(mealCard);
         });
     }
+    else {
+        // Show "not found" message
+        const notFoundMessage = document.createElement('p');
+        notFoundMessage.textContent = "Food is not found. Please search again.";
+        notFoundMessage.style.color = 'red';
+        notFoundMessage.style.textAlign = 'center';
+        resultsContainer.appendChild(notFoundMessage);
+    }
 }
 
 // Function to show meal details in a modal
