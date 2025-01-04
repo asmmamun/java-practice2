@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Find Your Favorite Food</h1>
+    </header>
+    <main>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Find your favorite food" />
+            <!-- Search Button -->
+            <button id="search-button" onclick="searchFood()">Search</button>
+        </div>
+        <!-- For Containing the Search Result -->
+        <div id="results-container"></div>
+
+        <!-- Modal of a food item -->
+        <div id="modal" class="modal">
+            <div id="modal-content" class="modal-content">
+                <button id="close-modal" class="close-button">&times;</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
